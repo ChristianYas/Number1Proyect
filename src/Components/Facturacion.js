@@ -50,6 +50,7 @@ const Facturacion = () =>{
         setNombre(w.localStorage.getItem('name'))
         setProducto(w.localStorage.getItem('compra'))
         setPrecio(w.localStorage.getItem('precio'))
+        setMarca(w.localStorage.getItem('marca'))
 
     },[])
 
