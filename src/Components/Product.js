@@ -76,6 +76,7 @@ const Product = ({producto}) =>{
         if(window.localStorage.getItem('login') === 'true'){
             w.localStorage.setItem('compra',name)
             w.localStorage.setItem('precio',precio)
+            w.localStorage.setItem('marca', marca)
 
             let fecha = new Date
             let day = fecha.getDate()
