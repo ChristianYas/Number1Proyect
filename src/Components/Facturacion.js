@@ -7,6 +7,7 @@ const Facturacion = () =>{
     const [producto, setProducto] = useState()
     const [precio, setPrecio] = useState()
     const [nombre, setNombre] = useState()
+    const [marca, setMarca] = useState()
 
     useEffect(()=>{
         let w = window
@@ -86,7 +87,7 @@ const Facturacion = () =>{
      position: absolute;
      right: 10px;
      bottom: 20px;
-     width: 20%;
+     width: 15%;
      height: 10%;
      border-radius: 5px;
      cursor: pointer;
@@ -102,6 +103,7 @@ const Facturacion = () =>{
             <Text>
             <Folio>Nombre de la persona: {nombre}</Folio>
             <Folio>Nombre del producto: {producto}</Folio>
+            <Folio>Marca: {marca}</Folio>
             <Folio>Precio del producto: {precio}$</Folio>
             <Fecha>Fecha de emicion: {fecha}</Fecha>
             <Folio>Folio fiscal: {folio}</Folio>
