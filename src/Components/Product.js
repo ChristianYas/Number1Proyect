@@ -1,9 +1,12 @@
 import styled from "styled-components"
 import Swal from "sweetalert2"
+import { Navigate } from "react-router-dom"
+import { useEffect, useState } from "react"
 
 const Product = ({producto}) =>{
 
     let {name,marca,descripcion,foto,precio} = producto
+    let w = window
 
     function reacomodar(name){
         if(name === 'Escalera') return '-70px'
@@ -68,31 +71,21 @@ const Product = ({producto}) =>{
      }
     `
 
-    const handlerClick = () =>{
+    const handlerClick = (e) =>{
         let usuario = window.localStorage.getItem('name')
         if(window.localStorage.getItem('login') === 'true'){
-            // let date = new Date
-            // let dt = new Date( "January 21, 1995 22:15:00" );
-            // console.log(date.toLocaleDateString());
-            // console.log(dt.getDay());
-            // console.log(date.getMonth());
-            // console.log(date.getFullYear());
+            w.localStorage.setItem('compra',name)
+            w.localStorage.setItem('precio',precio)
 
-            let compra = new Date("January 11, 20022 22:10:00")
-            let mesCompra =  compra.getMonth()
-            let anoComra = compra.getFullYear()
+            let fecha = new Date
+            let day = fecha.getDate()
+            let month = fecha.getMonth() + 1
+            let year = fecha.getFullYear()
 
-            let actual = new Date("February 11, 20022 22:10:00")
-            let mesActual = actual.getMonth()
-            let anoActual = actual.getFullYear()
+            let date = {day,month,year}
+            w.localStorage.setItem('date', JSON.stringify(date))
 
-            console.log(`mes de la compra${mesCompra} del ano ${anoComra}`);
-            console.log(`mes actual${mesActual} ano ${anoActual}`);
-
-            if(mesCompra <= mesActual && anoComra <= anoActual){
-                console.log('Se permite hacer ');
-            }
-
+            w.location.pathname = '/compra'
         }
         else{
             Swal.fire({
@@ -104,7 +97,7 @@ const Product = ({producto}) =>{
             })
 
             setTimeout(() => {
-                window.location.pathname = '/'
+                w.location.pathname = '/'
             }, 4300);
         }
     }
@@ -115,8 +108,8 @@ const Product = ({producto}) =>{
             <DivTetx>
                 <Small>{marca}</Small>
                 <P>{descripcion}</P>
-                <Price>{precio}</Price>
-                <Button onClick={handlerClick} type="button">Comprar</Button>
+                <Price>{precio}$</Price>
+                <Button id={name} onClick={handlerClick} type="button">Comprar</Button>
             </DivTetx>
         </Div>
     )

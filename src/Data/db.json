@@ -5,110 +5,111 @@
       "marca": "DEWALT",
       "descripcion": "TALADRO PERCUTOR INALAMBRICO DEWALT 2",
       "foto": "https://tiendamakita.com/1935-large_default/taladro-percutor-12-720w-makita-hp2050.jpg",
-      "precio": "3,199$"
+      "precio": "3199"
     },
     {
       "name": "Juego de llaves",
       "marca": "HUSKY",
       "descripcion": "JUEGO DE LLAVES COMBINADAS DE ACERO",
       "foto": "https://www.kleintools.com.mx/sites/all/product_assets/catalog_imagery/klein/68402_alt1.jpg",
-      "precio": "1,855$"
+      "precio": "1855"
     },
     {
       "name": "Escalera",
       "marca": "CUPRUM",
       "descripcion": "ESCALERA DE ALUMUNIO TIJERA 66CM",
       "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5NFmsDjyAVDhCpk2d2otUoMB2mSnWuYDyjw&usqp=CAU=",
-      "precio": "849$"
+      "precio": "849"
     },
     {
       "name": "Alicate",
       "marca": "QEP",
       "descripcion": "ALICATE DE PRESION DE 23 X 11 X 4.5CM",
       "foto": "https://promart.vteximg.com.br/arquivos/ids/725174-1000-1000/133196.jpg?v=637484091885500000",
-      "precio": "585$"
+      "precio": "585"
     },
     {
       "name": "Gafas",
       "marca": "panther vision",
       "descripcion": "gafas protectoras con led",
       "foto": "https://m.media-amazon.com/images/I/31MatipX7+L._AC_.jpg",
-      "precio": "379$"
+      "precio": "379"
     },
     {
       "name": "CINTA METRICA",
       "marca": "ANVIL",
       "descripcion": "CINTA METRICA 8M ACERO ANIVIL",
       "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3UjSMGAyt8wRb72Z2QECaydy9RUhjdVuMMA&usqp=CAU",
-      "precio": "155$"
+      "precio": "155"
     },
     {
       "name": "Martillo",
       "marca": "TRUPER",
       "descripcion": "MARTILLO DE BOLA DE 32 ONZAS TRUPER",
       "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV9Yd01dgtZyszmhEa8Bs10_eQm6oKqy9cIA&usqp=CAU",
-      "precio": "369$"
+      "precio": "369"
     },
     {
       "name": "Juego de destornilladores",
       "marca": "KLEIN TOOLS",
       "descripcion": "JUEGO DE DESARMADORES ACERO KLEIN TOOLS",
       "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTViPhLgT_ptPDARRRTShVTHGeX4ZZUIp945w&usqp=CAU",
-      "precio": "949$"
+      "precio": "949"
     },
     {
       "name": "serrucho",
       "marca": "TRUPER",
       "descripcion": "SERRUCHO DE 24 pulgadas acero truper",
       "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxe2Huv5R1qZoYH3aCBwB5r8iE_9yPrM0K-g&usqp=CAU",
-      "precio": "195$"
+      "precio": "195"
     },
     {
       "name": "cemento",
       "marca": "cemex",
       "descripcion": "cemento impercem gris cemex 50 kg",
       "foto": "https://fututiendas.com/images/com_sellacious/products/primary_image/10010/891_5f4ed0635871e-khjlio%C3%B1p%7B.JPG.jpg",
-      "precio": "215$"
+      "precio": "215"
     },
     {
       "name": "ladrillos",
       "marca": "novaceramic",
       "descripcion": "tabique multex-6 (6x12x24)",
       "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRm1ekzTaZUCHBO3xwsT-RnRTpQQ5uWSGpVkSlnm5f8waPn6-oIn2hWI9glkc5aHCQe0E&usqp=CAU",
-      "precio": "3$"
+      "precio": "3"
     },
     {
       "name": "pinzas",
       "marca": "husky",
       "descripcion": "juego de pinzas de persion en acero husky 3",
       "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMtLjp0_evFg49J9C_QCH8x0_VGJfHzcaKyg&usqp=CAU",
-      "precio": "595$"
+      "precio": "595"
     },
     {
       "name": "casco",
       "marca": "cabel",
       "descripcion": "casco protector 22.6cm",
       "foto": "https://safetystoremx.vteximg.com.br/arquivos/ids/155785-1000-1000/SE-CA08-1-.jpg?v=637245663968370000",
-      "precio": "89$"
+      "precio": "89"
     },
     {
       "name": "soplete",
       "marca": "bernzomatic",
       "descripcion": "kit de soplete multiuso 400 gramos bernzomatic",
       "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5pmSAHM-paQ8tYnVyY3-mS0AZe6ekjSon6A&usqp=CAU",
-      "precio": "2,765$"
+      "precio": "2,765"
     },
     {
       "name": "manguera",
       "marca": "pretul",
       "descripcion": "manguera de 10 M verde pretul",
-      "foto": "https://static.grainger.com/rp/s/is/image/Grainger/4YLN2_AS01?$zmmain$",
-      "precio": "109$"
+      "foto": "https://static.grainger.com/rp/s/is/image/Grainger/4YLN2_AS01?zmmain",
+      "precio": "109"
     }
   ],
   "usuarios": [
     {
       "nombre": "Christian Ivan",
+      "descuento": 5,
       "paterno": "Herrera",
       "materno": "Lopez",
       "email": "kore44@gmail.com",
@@ -117,6 +118,7 @@
     },
     {
       "nombre": "Carlos Arturo",
+      "descuento": 5,
       "paterno": "Martinez",
       "materno": "Martinez",
       "email": "Carlos@gmail.com",
@@ -125,6 +127,7 @@
     },
     {
       "nombre": "Angela Ximena",
+      "descuento": 5,
       "paterno": "Hernandez",
       "materno": "Escoto",
       "email": "Angela@gmail.com",
@@ -133,6 +136,7 @@
     },
     {
       "nombre": "Alejandra",
+      "descuento": 5,
       "paterno": "Lares",
       "materno": "Rivera",
       "email": "Alejandra4@gmail.com",
@@ -141,6 +145,7 @@
     },
     {
       "nombre": "Victoria",
+      "descuento": 7,
       "paterno": "Hernandez",
       "materno": "Contreras",
       "email": "Victoria@gmail.com",
@@ -149,6 +154,7 @@
     },
     {
       "nombre": "Jose Augusto",
+      "descuento": 5,
       "paterno": "Sanchez",
       "materno": "Martinez",
       "email": "Jose@gmail.com",
@@ -157,10 +163,118 @@
     },
     {
       "nombre": "Felipe De jesus",
+      "descuento": 5,
       "paterno": "Herera ",
       "materno": "Godinez",
       "email": "Herre@gmail.com",
       "telefono": "4771234230",
+      "id": 7
+    },
+    {
+      "nombre": "Luis ",
+      "paterno": "Hernandez",
+      "materno": "Estrada",
+      "email": "Luis@gmail.com",
+      "telefono": "47712315135",
+      "descuento": 18,
+      "id": 8
+    },
+    {
+      "nombre": "Angelo Emiliano",
+      "paterno": "Herrera",
+      "materno": "Lopez",
+      "email": "Emiliano@gmail.com",
+      "telefono": "4772349509",
+      "descuento": 7,
+      "id": 9
+    },
+    {
+      "nombre": "Ramon",
+      "paterno": "Lopez",
+      "materno": "Hernandez",
+      "email": "Ramon@gmail.com",
+      "telefono": "47712345629",
+      "descuento": 8,
+      "id": 10
+    }
+  ],
+  "ventas": [
+    {
+      "razon": "Christian Ivan",
+      "articulo": "ladrillos",
+      "rfc": "lomp8206281ho",
+      "cantidad": "400",
+      "fecha": {
+        "day": 1,
+        "month": 12,
+        "year": 2021
+      },
+      "precio": 1200,
+      "id": 2
+    },
+    {
+      "razon": "Christian Ivan",
+      "articulo": "Escalera",
+      "rfc": "lomp8206281ho",
+      "cantidad": "400",
+      "fecha": {
+        "day": 1,
+        "month": 1,
+        "year": 2022
+      },
+      "precio": 1200,
+      "id": 2
+    },
+    {
+      "razon": "Carlos Arturo",
+      "articulo": "Gafas",
+      "rfc": "asda213",
+      "cantidad": "4",
+      "fecha": {
+        "day": 19,
+        "month": 1,
+        "year": 2022
+      },
+      "precio": 1516,
+      "id": 4
+    },
+    {
+      "razon": "Alejandra",
+      "articulo": "CINTA METRICA",
+      "rfc": "asdasweqeq1212",
+      "cantidad": "2",
+      "fecha": {
+        "day": 19,
+        "month": 1,
+        "year": 2022
+      },
+      "precio": 310,
+      "id": 5
+    },
+    {
+      "razon": "Alejandra",
+      "articulo": "serrucho",
+      "rfc": "asdaqe12123",
+      "cantidad": "4",
+      "fecha": {
+        "day": 19,
+        "month": 1,
+        "year": 2022
+      },
+      "precio": 780,
+      "id": 6
+    },
+    {
+      "razon": "Christian Ivan",
+      "articulo": "Taladro",
+      "rfc": "asdasd132",
+      "cantidad": "1",
+      "fecha": {
+        "day": 19,
+        "month": 1,
+        "year": 2022
+      },
+      "precio": 3525.05,
       "id": 7
     }
   ]

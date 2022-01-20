@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom"
 import Reques from "../Helper/Reques"
 import Swal from "sweetalert2"
 import { useEffect } from "react"
+import { hover } from "@testing-library/user-event/dist/hover"
 
 const Home = () =>{
     useEffect(()=>{
@@ -12,11 +13,11 @@ const Home = () =>{
     },[])
 
     const Div = styled.div`
-     width: 80vw;
-     height: 80vh;
+     width: 100vw;
+     height: 85vh;
      position: relative;
-     top: 5px;
-     left: 135px;
+     top: -30px;
+     left: -6px;
      overflow: hidden;
     `
 
@@ -32,7 +33,7 @@ const Home = () =>{
  
     const Img = styled.img`
      width: 100%;
-     height: 100%
+     height: 100%;
      position: absolute;
     `
 
@@ -54,9 +55,9 @@ const Home = () =>{
      left: -5px;
      width: 100vw;
      height: 70px;
-     background-color: #B21313;
+     background-color: #F78D54;
      padding: 10px;
-     text-align: center;
+     text-align: start;
      color: #fff;
     `
 
@@ -65,10 +66,10 @@ const Home = () =>{
      color: #fff;
      font-family: 'Inter', sans-serif;
      font-weight: 500;
-     font-size: 21px;
+     font-size: 23px;
      position: relative;
-     top: 30px;
-     left: 15%
+     top: 40px;
+     left: 18%;
     `
 
     const Form = styled.form`
@@ -87,10 +88,10 @@ const Home = () =>{
      padding: 10px;
      outline: none;
      border: none;
-     background-color: #00000099;
+     border-bottom: 1px solid #fff;
      margin: 10px;
      color: #fff;
-     background-color: #FC5800;
+     background-color: transparent;
      
      &::placeholder{
         color: #fff;
@@ -116,10 +117,16 @@ const Home = () =>{
      left: 36%
     `
 
+    function check(usuario,emai,nombre,email){
+        console.log(usuario,nombre,email);
+        if(usuario === nombre && emai === email){
+            return usuario
+        }
+    }
+
     const handlerSubmit = (e) =>{
         e.preventDefault()
         let validationName
-        let validationValue
 
         let nombre = e['target'][0]['value']
         let value =  e['target'][1]['value']
@@ -127,10 +134,10 @@ const Home = () =>{
         Reques({method:'GET'},'validar')
         .then(res => res.ok ? res.json() : Promise.reject(res))
         .then(res =>{
-            validationName = res.find(usuario => usuario['nombre'] === nombre)
-            validationValue = res.find(usuario => usuario['nombre'] === value)
+            validationName = res.find(usuario => check(usuario['nombre'],usuario['email'],nombre,value))
+            window.localStorage.setItem('descuento',validationName['descuento'])
 
-            if(validationName || validationValue){
+            if(validationName){
                 window.localStorage.setItem('name',nombre)
                 window.localStorage.setItem('login', 'true')
                 Swal.fire({
@@ -147,8 +154,8 @@ const Home = () =>{
             }
             else{
                 Swal.fire({
-                    title: 'Lo sentimos pero no existe ese usuario',
-                    text: `Te invitamos a crear una cuenta`,
+                    title: 'Algo salio mal',
+                    text: `Por favor introduce bien los datos`,
                     icon: 'error'
                 })
             }
@@ -161,7 +168,7 @@ const Home = () =>{
     return(
         <>
         <Titulo>
-            Bienvenido a la tienda navarro
+            Ferreteria Navarro
         </Titulo>
          <Div>
             <Capa/>

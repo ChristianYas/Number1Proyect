@@ -37,6 +37,7 @@ const Login = ()=>{
      border-top-left-radius: 10px;
      border-top-right-radius: 10px;
      text-align: center;
+     z-index: 10
     `
 
     const Input = styled.input`
@@ -48,9 +49,9 @@ const Login = ()=>{
     `
 
     const Button = styled.button`
-     width: 100%;
+     width: 94%;
      height: 40px;
-     margin: 25px;
+     margin: 15px;
      padding: 10px;
      background-color: #FC5800;
      border: none;
@@ -58,6 +59,8 @@ const Login = ()=>{
      cursor: pointer;
      font-size: 20px;
      color: #fff;
+     position: relative;
+     top: 14px;
 
      &:hover{
         background-color: #F78D54;
@@ -83,6 +86,25 @@ const Login = ()=>{
      width: 50em;
     `
 
+    const Span = styled.span`
+     width: 110%;
+     height: 100px;
+     position: absolute;
+     background-color: #000;
+     left: 10px;
+     border-bottom-left-radius: 10px;
+     border-bottom-right-radius: 10px;
+    `
+
+    const Bloque = styled.div`
+     position: absolute;
+     top: -94px;
+     left: 25px; 
+     width: 99%;
+     height: 90px;
+     background-color: #000;
+    `
+
     const handlerSubmit = (e) =>{
         e.preventDefault()
 
@@ -95,8 +117,11 @@ const Login = ()=>{
 
             array.push([e['target'][i]['name'],e['target'][i]['value']])
         }
+        
+        let descuento = Math.round(Math.random()*20)
 
         array = Object.fromEntries(array)
+        array.descuento = descuento
         
       if(validation === 0){
         
@@ -142,12 +167,15 @@ const Login = ()=>{
                 <Small>Creando una cuenta</Small>
             </Top>
             <Form onSubmit={handlerSubmit}>
+                <Bloque/>
                 <Input type={'text'} placeholder="Nombre" name="nombre" autoComplete="off"/>
                 <Input type={'text'} placeholder="apellido paterno" name="paterno" autoComplete="off"/>
                 <Input type={'text'} placeholder="apellido materno" name="materno" autoComplete="off"/>
                 <Input type={'text'} placeholder="Email" name="email" autoComplete="off"/>
                 <Input type={'tel'} placeholder="Numero de telefono" name="telefono" autoComplete="off"/>
+                <Span>
                 <Button type={'submit'}>Enviar</Button>
+                </Span>
             </Form>
         </Div>
       </>
